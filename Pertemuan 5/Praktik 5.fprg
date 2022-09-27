@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Endri Yanto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-18 10:42:18 PM"/>
+        <attribute name="created" value="RW5kcmkgWWFudG87REVTS1RPUC1WTzU1VjZVOzIwMjItMDktMTg7MDk6MzE6NTEgUE07MzQxOQ=="/>
+        <attribute name="edited" value="RW5kcmkgWWFudG87REVTS1RPUC1WTzU1VjZVOzIwMjItMDktMTg7MTA6NDI6MTggUE07MTszNTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tb" type="Integer" array="False" size=""/>
+            <declare name="member" type="Integer" array="False" size=""/>
+            <input variable="tb"/>
+            <input variable="member"/>
+            <if expression="tb &gt; 1000000">
+                <then>
+                    <if expression="member != y">
+                        <then>
+                            <output expression="&quot;Diskon 35000&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;diskon 20000&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Diskon 0&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="test" type="String" variable="y">
+        <parameters/>
+        <body>
+            <declare name="y" type="String" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>
