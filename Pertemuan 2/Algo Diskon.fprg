@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Endri Yanto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-30 09:18:48 PM"/>
+        <attribute name="created" value="RW5kcmkgWWFudG87REVTS1RPUC1WTzU1VjZVOzIwMjItMDgtMzA7MDk6MDc6NDkgUE07MzQyMg=="/>
+        <attribute name="edited" value="RW5kcmkgWWFudG87REVTS1RPUC1WTzU1VjZVOzIwMjItMDgtMzA7MDk6MTg6NDggUE07MTszNTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Harga, Jumlah, Total" type="Integer" array="False" size=""/>
+            <declare name="Terimakasih, PayungCantik" type="String" array="False" size=""/>
+            <input variable="Harga"/>
+            <input variable="Jumlah"/>
+            <assign variable="Total" expression="Harga * Jumlah"/>
+            <if expression="Total&gt;1000000">
+                <then>
+                    <output expression="&quot;PayungCantik&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Terimakasih&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
